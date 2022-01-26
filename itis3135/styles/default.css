@@ -1,0 +1,20 @@
+figure {
+    text-align: center;
+    font-style: italic;
+    text-decoration-color: #4A2040;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+main {
+    text-decoration-color: #062726;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    font-family: monospace;
+}
