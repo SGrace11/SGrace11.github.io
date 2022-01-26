@@ -15,6 +15,10 @@ main {
     font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+    background-color: #BFCC94;
+}
+
 footer {
     font-family: monospace;
 }
