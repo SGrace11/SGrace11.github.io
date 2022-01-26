@@ -10,15 +10,17 @@ figure {
     display: block;
 }
 
-main {
-    text-decoration-color: #062726;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 body {
     background-color: #BFCC94;
+    text-decoration-color: #062726;
+    font-family:  Courier sans-serif, monospace sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: monospace serif;
+    text-decoration-color: #4A2040;
 }
 
 footer {
-    font-family: monospace;
+    font-family: monospace sans-serif;
 }
