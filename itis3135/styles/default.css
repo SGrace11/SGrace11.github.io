@@ -1,6 +1,7 @@
 header
 {
     text-align: center;
+    
 }
 
 figure
@@ -22,6 +23,8 @@ body
     background-color: #BFCC94;
     text-decoration-color: #062726;
     font-family:  Courier sans-serif, monospace sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h1, h2, h3
@@ -34,4 +37,5 @@ footer
 {
     font-family: monospace sans-serif;
     text-align: center;
+    line-height: 30px;
 }
