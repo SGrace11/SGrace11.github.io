@@ -1,31 +1,37 @@
-header {
+header
+{
     text-align: center;
 }
 
-figure {
+figure
+{
     text-align: center;
     font-style: italic;
     text-decoration-color: #4A2040;
 }
 
-.center {
+.center
+{
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-body {
+body
+{
     background-color: #BFCC94;
     text-decoration-color: #062726;
     font-family:  Courier sans-serif, monospace sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3
+{
     font-family: monospace serif;
     text-decoration-color: #4A2040;
 }
 
-footer {
+footer
+{
     font-family: monospace sans-serif;
     text-align: center;
 }
