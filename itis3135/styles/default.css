@@ -46,10 +46,12 @@ th, td
     border: 2px solid #4A2040;
 }
 
-th
-{
-    background-color: #658E9C;
-}
-
+th{background-color: #658E9C;}
 table tr:nth-child(even){background-color: #9fdef3;}
 table tr:nth-child(odd) {background-color: #8bc5d8;}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
