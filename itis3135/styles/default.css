@@ -1,7 +1,8 @@
+/*https://coolors.co/4a2040-eeebd3-658e9c-116a67-bfcc94*/
 header
 {
     text-align: center;
-    
+
 }
 
 figure
@@ -21,7 +22,7 @@ figure
 body
 {
     background-color: #BFCC94;
-    text-decoration-color: #062726;
+    text-decoration-color: #116A67;
     font-family:  Courier sans-serif, monospace sans-serif;
     margin-left: 50px;
     margin-right: 50px;
@@ -39,3 +40,16 @@ footer
     text-align: center;
     line-height: 30px;
 }
+
+th, td
+{
+    border: 2px solid #4A2040;
+}
+
+th
+{
+    background-color: #658E9C;
+}
+
+table tr:nth-child(even){background-color: #9fdef3;}
+table tr:nth-child(odd) {background-color: #8bc5d8;}
