@@ -58,6 +58,25 @@ table
 
 form
 {
+    align-content: center;
     margin: auto;
     background-color: #EEEBD3;
+}
+
+form label
+{
+    font-family: Courier sans-serif;
+    color: #116A67;
+}
+
+form select
+{
+    color: #658E9C;
+    size: 8px;
+}
+
+form button
+{
+    background-color: #116A67;
+    color: #EEEBD3;
 }
