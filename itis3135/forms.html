@@ -13,13 +13,13 @@
         <main>
             <form action="#">
                 <label for="name">Name: 
-                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input style="margin: auto;" type="text" id="name" name="name" placeholder="Name" required>
                 </label><br>
                 <label for="phone">Phone Number: 
-                    <input type="tel" id="phone" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                    <input style="margin: auto" type="tel" id="phone" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
                 </label><br>
                 <label for="email">Email: 
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input style="margin: auto" type="email" id="email" name="email" placeholder="Email" required>
                 </label><br>
                 <p>Recieve emails about sales and promotions</p>
                 <label for="pro-emails">
@@ -39,7 +39,8 @@
                     <input id="nonprofit" type="radio" value="nonprofit" name="client-type">Non-Profit
                 </label><br>
                 <label for="state">Reside in: 
-                    <select id="state" name="state" size="5" required>
+                    <select id="state" name="state" required>
+                        <option></option>
                         <option value="VA">VA</option>
                         <option value="NC">NC</option>
                         <option value="TN">TN</option>
