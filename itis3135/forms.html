@@ -11,7 +11,39 @@
             <h2><a href="./">Home</a> | <a href="introduction.html">Introduction</a> | <a href="contracts.html">Contract</a> | <a href="tables.html">Table</a> | <a href="forms.html">Form</a> | <a href="https://webpages.charlotte.edu/sgrace8/">UNCC Page</a></h2>
         </header>
         <main>
-            
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+                <input type="tel" id="phone" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx"><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <p>Recieve emails about sales and promotions</p>
+                <label for="pro-emails">
+                    <input id="pro-emails" type="checkbox" value="yes" name="get-emails">Yes
+                </label>
+                <label for="anti-emails">
+                    <input id="anti-emails" type="checkbox" value="no" name="get-emails">No
+                </label><br>
+                <p>Let us know a bit more about you:</p><br>
+                <label for="business">
+                    <input id="business" type="radio" value="business" name="client-type">Business
+                </label>
+                <label for="individual">
+                    <input id="individual" type="radio" value="individual" name="client-type">individual
+                </label>
+                <label for="nonprofit">
+                    <input id="nonprofit" type="radio" value="nonprofit" name="client-type">Non-Profit
+                </label>
+                <label for="state">
+                    <select id="state" name="state" required>
+                        <option value="VA">VA</option>
+                        <option value="NC">NC</option>
+                        <option value="TN">TN</option>
+                        <option value="SC">SC</option>
+                        <option value="GA">GA</option>
+                    </select>
+                </label>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
         </main>
         <footer>
             <a href="https://webpages.charlotte.edu/sgrace8/">UNCC Page</a> | <a href="https://github.com/SGrace11/SGrace11.github.io">GitHub Repo</a> | <a href="https://sgrace11.github.io/">GitHub Page</a> | <a href="https://www.freecodecamp.org/sarahgrace">FreeCodeCamp</a> | <a href="https://www.linkedin.com/in/sarah-grace-063a47200/">LinkedIn</a>
