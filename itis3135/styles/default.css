@@ -68,16 +68,24 @@ form label
 {
     font-family: Courier sans-serif;
     color: #116A67;
+    margin: 5px;
+}
+
+form input
+{
+    margin: 5px;
 }
 
 form select
 {
+    margin: 5px;
     color: #658E9C;
     size: 8px;
 }
 
 form button
 {
+    margin: 10px;
     background-color: #116A67;
     color: #EEEBD3;
 }
