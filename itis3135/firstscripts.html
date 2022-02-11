@@ -6,9 +6,18 @@
 </head>
 <body>
     <p>
-        What is your first name? <input type="text" id="firstname" name="firstname">
-        How are you feeling? <input type="text" id="feeling" name="feeling">
-        <input onclick="alert('Hey, you clicked me!');" type="button" id="submit" name="submit">
+        What is your first name? <input type="text" id="firstname" name="firstname"><br>
+        How are you feeling? <input type="text" id="feeling" name="feeling"><br>
+        <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
+        <output id="output"
     </p>
+    <script>
+        function getInfo()
+        {
+            let firstname = document.getElementById("firstname").value;
+            let feeling = document.getElementById("feeling").value;
+            document.getElementById("output").innerHTML = feeling;
+        }
+    </script>
 </body>
 </html>
