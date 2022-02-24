@@ -8,13 +8,17 @@
     </head>
     <body>
         <div data-include="components/header.html"></div>
-        <button onclick="scriptTest()">Testing</button>
-        <p>
-            What is your first name? <input type="text" id="firstname" name="firstname"><br>
-            How are you feeling? <input type="text" id="feeling" name="feeling"><br>
-            <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
-            <output id="output"
-        </p>
+        <main>
+            <h1>First JS</h1>
+            <h3 id="date"></h3>
+            <button onclick="scriptTest()">Testing</button>
+            <p>
+                What is your first name? <input type="text" id="firstname" name="firstname"><br>
+                How are you feeling? <input type="text" id="feeling" name="feeling"><br>
+                <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
+            </p>
+            <h3 id="output"></h3>
+        </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
     </body>
