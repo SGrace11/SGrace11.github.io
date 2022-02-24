@@ -10,3 +10,9 @@ function getInfo()
     let statement = "The Sage Geckos welcome you, " + firstname + "! It is good to know you are feeling " + feeling + "."
     document.getElementById("output").innerHTML = statement;
 }
+
+function getDateTime()
+{
+    let date = datetime.now()
+    document.getElementById("date").innerHTML = date;
+}
