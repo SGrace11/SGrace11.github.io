@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset = "utf-8" />
-        <title>Sarah Grace | ITIS3135 | Sage Gecko | First JS</title>
-        <link href = "styles/default.css" type = "text/css" rel = "stylesheet" >
-        <script src="scripts/defaultscripts.js"></script>
-</head>
-<body>
-    <button onclick="scriptTest()">Testing</button>
-    <p>
-        What is your first name? <input type="text" id="firstname" name="firstname"><br>
-        How are you feeling? <input type="text" id="feeling" name="feeling"><br>
-        <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
-        <output id="output"
-    </p>
-</body>
+    <head>
+        <meta charset = "utf-8" />
+            <title>Sarah Grace | ITIS3135 | Sage Gecko | First JS</title>
+            <link href = "styles/default.css" type = "text/css" rel = "stylesheet" >
+            <script src="scripts/defaultscripts.js"></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <button onclick="scriptTest()">Testing</button>
+        <p>
+            What is your first name? <input type="text" id="firstname" name="firstname"><br>
+            How are you feeling? <input type="text" id="feeling" name="feeling"><br>
+            <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
+            <output id="output"
+        </p>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/htmlinclude.js"></script>
+    </body>
 </html>
