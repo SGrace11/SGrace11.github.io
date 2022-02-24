@@ -4,21 +4,15 @@
     <meta charset = "utf-8" />
         <title>Sarah Grace | ITIS3135 | Sage Gecko | First JS</title>
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet" >
+        <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
+    <button onclick="scriptTest()">Testing</button>
     <p>
         What is your first name? <input type="text" id="firstname" name="firstname"><br>
         How are you feeling? <input type="text" id="feeling" name="feeling"><br>
         <input onclick="getInfo();" type="button" id="submit" name="submit" value="Submit">
         <output id="output"
     </p>
-    <script>
-        function getInfo()
-        {
-            let firstname = document.getElementById("firstname").value;
-            let feeling = document.getElementById("feeling").value;
-            document.getElementById("output").innerHTML = feeling;
-        }
-    </script>
 </body>
 </html>
