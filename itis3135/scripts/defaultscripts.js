@@ -13,6 +13,10 @@ function getInfo()
 
 function getDateTime()
 {
+    let statement = "Today is ";
     let date = new Date();
-    document.getElementById("date").innerHTML = date.toDateString();
+    statement += toString(date.getHours());
+    statement += ":";
+    statement += toString(date.getMinutes());
+    document.getElementById("date").innerHTML = statement;
 }
