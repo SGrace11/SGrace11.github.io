@@ -13,6 +13,6 @@ function getInfo()
 
 function getDateTime()
 {
-    let date = datetime.now();
-    document.getElementById("date").innerHTML = date;
+    let date = new Date();
+    document.getElementById("date").innerHTML = date.toDateString();
 }
