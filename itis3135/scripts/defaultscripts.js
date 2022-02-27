@@ -15,8 +15,8 @@ function getDateTime()
 {
     let statement = "Today is ";
     let date = new Date();
-    statement += toString(date.getHours());
+    statement += date.getHours().toString();
     statement += ":";
-    statement += toString(date.getMinutes());
+    statement += date.getMinutes().toString();
     document.getElementById("date").innerHTML = statement;
 }
