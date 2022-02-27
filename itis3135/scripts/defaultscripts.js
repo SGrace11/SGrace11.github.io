@@ -26,3 +26,8 @@ function getDateTime()
     statement += ", " + date.getFullYear().toString();
     document.getElementById("date").innerHTML = statement;
 }
+
+function sumTwoInts()
+{
+    
+}
