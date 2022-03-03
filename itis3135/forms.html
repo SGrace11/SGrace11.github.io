@@ -26,15 +26,17 @@
                     <input id="anti-emails" type="checkbox" value="no" name="get-emails">No
                 </label><br>
                 <p>Let us know a bit more about you:</p>
-                <label for="business">
-                    <input id="business" type="radio" value="business" name="client-type">Business
-                </label>
-                <label for="individual">
-                    <input id="individual" type="radio" value="individual" name="client-type">Individual
-                </label>
-                <label for="nonprofit">
-                    <input id="nonprofit" type="radio" value="nonprofit" name="client-type">Non-Profit
-                </label><br>
+                <div>
+                    <input id="business" type="radio" name="client-type" value="business">
+                    <label for="business">Business</label>
+                    
+                    <label for="individual">
+                        <input id="individual" type="radio" name="client-type" value="individual">Individual
+                    </label>
+                    <label for="nonprofit">
+                        <input id="nonprofit" type="radio" name="client-type" value="nonprofit">Non-Profit
+                    </label><br>
+                </div>
                 <label for="state">Reside in: 
                     <select id="state" name="state" required>
                         <option value="" disabled selected> - </option>
