@@ -5,6 +5,15 @@ header
 
 }
 
+figure image
+{
+    width: 500px;
+    height: 552px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 figcaption
 {
     text-align: center;
