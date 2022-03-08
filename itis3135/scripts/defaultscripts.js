@@ -34,3 +34,15 @@ function sumTwoInts()
     let sum = firstNumber + secondNumber;
     alert(firstNumber + " geckos plus " + secondNumber + " geckos is " + sum + " geckos!");
 }
+
+function second()
+{}
+
+function third()
+{}
+
+function fourth()
+{}
+
+function fifth()
+{}
