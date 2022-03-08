@@ -29,5 +29,8 @@ function getDateTime()
 
 function sumTwoInts()
 {
-    
+    let firstNumber = parseInt(prompt("Enter a number, please: "));
+    let secondNumber = parseInt(prompt("Enter another number, please: "));
+    let sum = firstNumber + secondNumber;
+    alert(firstNumber + " geckos plus " + secondNumber + " geckos is " + sum + " geckos!");
 }
