@@ -3,12 +3,61 @@
     <head>
         <meta charset = "utf-8" />
             <title>Sarah Grace | ITIS3135 | Sage Gecko | Slideshow</title>
-            <link href = "styles/default.css" type = "text/css" rel = "stylesheet" >
+            <link href="styles/slideshow.css" type="text/css" rel="stylesheet">
+            <link href="styles/default.css" type="text/css" rel="stylesheet" >
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <h2>Slideshow</h2>
-        
+        <div class="slideshow">
+            <!--slides-->
+            <div class="slide">
+                <img src="images/cinnamonrolls.jpg" alt="cinnamon rolls on a baking sheet">
+            </div>
+            <div class="slide">
+                <img src="images/coffeecakes.jpg" alt="loaves of coffee cake">
+            </div>
+            <div class="slide">
+                <img src="images/doughnuts.jpg" alt="iced cake doughnuts">
+            </div>
+            <div class="slide">
+                <img src="images/lemontart.jpg" alt="puff pastry filled with lemon curd">
+            </div>
+            <div class="slide">
+                <img src="images/pretzels.jpg" alt="soft pretzels on a baking sheet">
+            </div>
+            <div class="slide">
+                <img src="images/savorybabka.jpg" alt="babka loaf on a cooling rack">
+            </div>
+            <!--scroll buttons-->
+            <a class="previous">&#10094;</a>
+            <a class="next">&#10095;</a>
+            <!--caption-->
+            <div class="caption-box">
+                <p class="caption"></p>
+            </div>
+            <!--thumbnails-->
+            <div class="row">
+                <div class="column">
+                    <img class="demo" src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/coffeecakes.jpg" alt="Coffee Cake">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/doughnuts.jpg" alt="Iced Doughnuts">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/lemontart.jpg" alt="Lemon Tart">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/pretzels.jpg" alt="Soft Pretzels">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/savorybabka.jpg" alt="Pesto Babka">
+                </div>
+            </div>
+        </div>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
     </body>
