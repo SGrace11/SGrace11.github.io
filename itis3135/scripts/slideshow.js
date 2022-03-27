@@ -28,6 +28,10 @@ function showSlides(n)
     {
         slideIndex = slides.length;
     }
+    for(i = 0; i < slides.length; i++)
+    {
+        slides[n].style.display = "none";
+    }
     for(i = 0; i < dots.length; i++)
     {
         dots[i].className = dots[i].className.replace(" active", "")
