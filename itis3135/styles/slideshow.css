@@ -9,6 +9,7 @@ div.slideshow, div.slideshow > *
 .slide
 {
     display: none;
+    height: 100%;
 }
 .previous, .next
 {
