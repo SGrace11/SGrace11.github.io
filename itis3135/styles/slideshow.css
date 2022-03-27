@@ -60,3 +60,7 @@ div.slideshow, div.slideshow > *
 {
     opacity: 1;
 }
+div img
+{
+    vertical-align: center;
+}
