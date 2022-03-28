@@ -9,7 +9,7 @@ div.slideshow, div.slideshow > *
 .slide
 {
     display: none;
-    vertical-align: middle;
+    margin: auto;
 }
 .previous, .next
 {
