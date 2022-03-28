@@ -62,5 +62,5 @@ div.slideshow, div.slideshow > *
 }
 div img
 {
-    vertical-align: middle;
+    text-align: center;
 }
