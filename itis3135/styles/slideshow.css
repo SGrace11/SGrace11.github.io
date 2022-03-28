@@ -55,6 +55,7 @@ div.slideshow, div.slideshow > *
 .demo
 {
     opacity: 0.6;
+    width: 100%;
 }
 .active, .demo:hover
 {
