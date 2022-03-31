@@ -8,57 +8,59 @@
     </head>
     <body>
         <div data-include="components/header.html"></div>
-        <h2>Baking Slideshow</h2>
-        <div class="slideshow">
-            <!--slides-->
-            <div class="slide">
-                <img src="images/cinnamonrolls.jpg" alt="cinnamon rolls on a baking sheet">
-            </div>
-            <div class="slide">
-                <img src="images/coffeecakes.jpg" alt="loaves of coffee cake">
-            </div>
-            <div class="slide">
-                <img src="images/doughnuts.jpg" alt="iced cake doughnuts">
-            </div>
-            <div class="slide">
-                <img src="images/lemontart.jpg" alt="puff pastry filled with lemon curd">
-            </div>
-            <div class="slide">
-                <img src="images/pretzels.jpg" alt="soft pretzels on a baking sheet">
-            </div>
-            <div class="slide">
-                <img src="images/savorybabka.jpg" alt="babka loaf on a cooling rack">
-            </div>
-            <!--scroll buttons-->
-            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <!--caption-->
-            <div class="caption-box">
-                <p id="caption"></p>
-            </div>
-            <!--thumbnails-->
-            <div class="row">
-                <div class="column">
-                    <img class="demo" src="images/cinnamonrolls.jpg" onclick="currentSlide(1)" alt="Cinnamon Rolls">
+        <main>
+            <h2>Baking Slideshow</h2>
+            <div class="slideshow">
+                <!--slides-->
+                <div class="slide">
+                    <img src="images/cinnamonrolls.jpg" alt="cinnamon rolls on a baking sheet">
                 </div>
-                <div class="column">
-                    <img class="demo" src="images/coffeecakes.jpg" onclick="currentSlide(2)" alt="Coffee Cake">
+                <div class="slide">
+                    <img src="images/coffeecakes.jpg" alt="loaves of coffee cake">
                 </div>
-                <div class="column">
-                    <img class="demo" src="images/doughnuts.jpg" onclick="currentSlide(3)" alt="Iced Doughnuts">
+                <div class="slide">
+                    <img src="images/doughnuts.jpg" alt="iced cake doughnuts">
                 </div>
-                <div class="column">
-                    <img class="demo" src="images/lemontart.jpg" onclick="currentSlide(4)" alt="Lemon Tart">
+                <div class="slide">
+                    <img src="images/lemontart.jpg" alt="puff pastry filled with lemon curd">
                 </div>
-                <div class="column">
-                    <img class="demo" src="images/pretzels.jpg" onclick="currentSlide(5)" alt="Soft Pretzels">
+                <div class="slide">
+                    <img src="images/pretzels.jpg" alt="soft pretzels on a baking sheet">
                 </div>
-                <div class="column">
-                    <img class="demo" src="images/savorybabka.jpg" onclick="currentSlide(6)" alt="Pesto Babka">
+                <div class="slide">
+                    <img src="images/savorybabka.jpg" alt="babka loaf on a cooling rack">
+                </div>
+                <!--scroll buttons-->
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!--caption-->
+                <div class="caption-box">
+                    <p id="caption"></p>
+                </div>
+                <!--thumbnails-->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" src="images/cinnamonrolls.jpg" onclick="currentSlide(1)" alt="Cinnamon Rolls">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/coffeecakes.jpg" onclick="currentSlide(2)" alt="Coffee Cake">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/doughnuts.jpg" onclick="currentSlide(3)" alt="Iced Doughnuts">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/lemontart.jpg" onclick="currentSlide(4)" alt="Lemon Tart">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/pretzels.jpg" onclick="currentSlide(5)" alt="Soft Pretzels">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/savorybabka.jpg" onclick="currentSlide(6)" alt="Pesto Babka">
+                    </div>
                 </div>
             </div>
-        </div>
-        <script src="scripts/slideshow.js"></script>
+            <script src="scripts/slideshow.js"></script>
+        </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/htmlinclude.js"></script>
     </body>
