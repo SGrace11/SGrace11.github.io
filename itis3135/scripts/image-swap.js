@@ -1,0 +1,1 @@
+let imageIndex = 1;
