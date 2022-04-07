@@ -1,3 +1,8 @@
+main
+{
+    width: 600px;
+    margin: auto;
+}
 h1, h2, ul, div
 {
     margin: 0;
@@ -7,4 +12,9 @@ li
 {
     padding-right: 10px;
     display: inline;
+}
+main div
+{
+    display: none;
+    text-align: center;
 }
