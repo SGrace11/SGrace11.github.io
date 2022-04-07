@@ -1,4 +1,5 @@
 let imageIndex = 1;
+showImage(imageIndex);
 
 function showImage(n)
 {
