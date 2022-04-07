@@ -5,6 +5,7 @@ function showImage(n)
 {
     let i;
     let images = document.getElementsByClassName("image");
+    let thumbnails = document.getElementsByClassName("mini");
     let captionText = document.getElementById("caption");
 
     if(n > images.length)
@@ -21,5 +22,5 @@ function showImage(n)
         images[i].style.display = "none";
     }
     images[imageIndex - 1].style.display = "block";
-    captionText.innerHTML = images[imageIndex - 1].alt;
+    captionText.innerHTML = thumbnails[imageIndex - 1].alt;
 }
