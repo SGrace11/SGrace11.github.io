@@ -1,6 +1,11 @@
 let imageIndex = 1;
 showImage(imageIndex);
 
+currentImage(n)
+{
+    showImage(imageIndex = n);
+}
+
 function showImage(n)
 {
     let i;
