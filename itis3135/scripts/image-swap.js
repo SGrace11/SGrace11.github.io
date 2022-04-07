@@ -13,10 +13,10 @@ function showImage(n)
     }
     if(n < 1)
     {
-        imageIndex = slides.length;
+        imageIndex = images.length;
     }
 
-    for(i = 0; i < slides.length; i++)
+    for(i = 0; i < images.length; i++)
     {
         images[i].style.display = "none";
     }
