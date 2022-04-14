@@ -1,9 +1,10 @@
 function polygon()
 {
+    // Ask for a number between 1 and 10
     let sideCount = parseInt(prompt("Enter a number of sides between 1 and 10."));
-    console.log(sideCount);
+    // Validate the entered value
     let validatedSideCount = validateEntry(sideCount);
-    console.log(validatedSideCount);
+    // Get the name of the shape with the given number of sides
     let results = getShape(validatedSideCount);
     alert(results);
 }
@@ -11,7 +12,7 @@ function polygon()
 function getShape(_sideCount)
 {
     let shapeName;
-    
+    // Use the parameter to determine which shape should be returned
     if(_sideCount == 1)
     {shapeName = "monogon";}
     else if(_sideCount == 2)
@@ -39,6 +40,8 @@ function getShape(_sideCount)
 function validateEntry(_entry)
 {
     let entry = _entry;
+    // Check that the entry is a number and is between 1 and 10
+    // If not, alert and ask for a new entry
     while(isNaN(entry) || entry < 1 || entry > 10)
     {
         alert("Hey, that's not an integer between 1 and 10!");
