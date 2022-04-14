@@ -11,25 +11,25 @@ function getShape(_sideCount)
     let shapeName;
     
     if(_sideCount = 1)
-    {shapeName = monogon;}
+    {shapeName = "monogon";}
     else if(_sideCount = 2)
-    {shapeName = digon;}
+    {shapeName = "digon";}
     else if(_sideCount = 3)
-    {shapeName = triangle;}
+    {shapeName = "triangle";}
     else if(_sideCount = 4)
-    {shapeName = quadrilateral;}
+    {shapeName = "quadrilateral";}
     else if(_sideCount = 5)
-    {shapeName = pentagon;}
+    {shapeName = "pentagon";}
     else if(_sideCount = 6)
-    {shapeName = hexagon;}
+    {shapeName = "hexagon";}
     else if(_sideCount = 7)
-    {shapeName = septagon;}
+    {shapeName = "septagon";}
     else if(_sideCount = 8)
-    {shapeName = octagon;}
+    {shapeName = "octagon";}
     else if(_sideCount = 9)
-    {shapeName = nonagon;}
+    {shapeName = "nonagon";}
     else if(_sideCount = 10)
-    {shapeName = decagon;}
+    {shapeName = "decagon";}
 
     return shapeName;
 }
