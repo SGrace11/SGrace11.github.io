@@ -1,0 +1,25 @@
+/*tan: #EFE6DD yellow: #F9D409 green: #405026 pink: #CE5E5A*/
+body
+{
+    background-color: #EFE6DD;
+}
+
+header
+{
+    text-align: center;
+}
+
+footer
+{
+    font-family: monospace sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+a
+{
+    color: #CE5E5A;
+    text-decoration: none;
+}
+a:hover{color: #cd413c}
+a:visited {color: #CE5E5A;}
