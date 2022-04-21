@@ -4,9 +4,44 @@ body
     background-color: #EFE6DD;
 }
 
+main
+{
+    margin: 15px;
+}
+
 header
 {
     text-align: center;
+}
+
+nav
+{
+    background-color: #405026;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+nav a
+{
+    color: #F9D409;
+    padding: 20px;
+    display: block;
+}
+nav a:visited {color: #F9D409;}
+nav a:hover, nav a:focus, nav ul .active
+{
+    background-color: #484e3e;
+    color: #F9D409;
+}
+
+nav ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 footer
