@@ -12,7 +12,7 @@ function addSalary()
     } else
     {
         people.push(employee);
-        salaries.push(salary);
+        salaries.push(parseInt(salary));
     }
 }
 
