@@ -35,11 +35,24 @@ function sumTwoInts()
     alert(firstNumber + " geckos plus " + secondNumber + " geckos is " + sum + " geckos!");
 }
 
-function second()
-{}
+function calculateAreaAndPerimeter()
+{
+    let firstNumber = parseInt(prompt("Enter a number, please: "));
+    let secondNumber = parseInt(prompt("Enter another number, please: "));
+    let area = firstNumber * secondNumber;
+    let perimeter = (2 * firstNumber) + (2 * secondNumber);
+    alert("A rectangle with a length of " + firstNumber + " geckos long and a width of " + secondNumber +
+    " geckos long has an area of " + area + " geckos squared and a perimeter of " + perimeter + " geckos long");
+}
 
-function third()
-{}
+function calculateTax()
+{
+    let price = parseFloat(prompt("Enter a price, please: "));
+    let percent = parseFloat(prompt("Enter a tax percentage, please: "));
+    let tax = price * percent;
+    let total = price + tax;
+    alert("If you buy a gecko that costs $" + price + " and a tax of " + percent + "% is added, you will pay $" + tax + " in tax, for a total of $" + total);
+}
 
 function fourth()
 {}
