@@ -8,8 +8,8 @@ header
 /*specific to design-document img element*/
 div figure img
 {
-    width: 661px;
-    height: 231px;
+    width: auto;
+    height: auto;
     display: block;
 }
 
