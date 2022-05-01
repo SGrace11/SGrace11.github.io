@@ -54,8 +54,19 @@ function calculateTax()
     alert("If you buy a gecko that costs $" + price + " and a tax of " + percent + "% is added, you will pay $" + tax + " in tax, for a total of $" + total);
 }
 
-function fourth()
-{}
+function randomColor()
+{
+    let colors = ['red','orange','yellow','green','blue','purple'];
+    let number = Math.floor(Math.random() * 6);
+    let myColor = colors[number];
+    alert("The geckos have decided. Your color is " + myColor + "!");
+}
 
-function fifth()
-{}
+function averageLength()
+{
+    let firstLength = parseFloat(prompt("Enter the length of the first gecko, please: "));
+    let secondLength = parseFloat(prompt("Enter the length of the second gecko, please: "));
+    let thirdLength = parseFloat(prompt("Enter the length of the third gecko, please: "));
+    let average = (firstLength + secondLength + thirdLength) / 3;
+    alert("The average length of the three geckos is " + average + ".");
+}
