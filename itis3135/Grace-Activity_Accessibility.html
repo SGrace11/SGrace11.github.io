@@ -17,39 +17,67 @@
   <header>
   </header>
   <main>
-
+    <h1>Candle Delight</h1>
     <table class="center">
 
-      <caption></caption>
+      <caption>Candles</caption>
       <thead>
         <tr>
           <!-- identify table headers <th> with scope attribute -->
-          <th >TYPE</th>
-          <th >PRODUCT</th>
-          <th >FEATURES</th>
+          <th>TYPE</th>
+          <th>PRODUCT</th>
+          <th>FEATURES</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th></th>
-          <td></td>
-          <td></td>   
-        </td>
+          <th>Birthday Candles</th>
+          <td>
+            <img src="./images/accessibilityImages/Birthday-Candles.jpg" alt="cake with candles spelling out 'happy birthday'">
+          </td>
+          <td>
+            <ol>
+              <li>Comes in a range of fun, vibrant colors</li>
+              <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+              <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+            </ol>
+          </td>
         </tr>
         <tr>
-            <th></th>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-              <th></th>
-              <td></td>
-              <td></td>
-            </tr>
+            <th>Votives</th>
+            <td>
+              <img src="./images/accessibilityImages/voltives.jpeg" alt="five votive candles on a white background">
+            </td>
+            <td>
+              <ol>
+                <li>Inexpensive and easy to use</li>
+                <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+              </ol>
+            </td>
+        </tr>
+        <tr>
+          <th>Taper Candles</th>
+          <td>
+            <img src="./images/accessibilityImages/taper-candles.jpg" alt="assortment of different colored taper candles on a white background">
+          </td>
+          <td>
+            <ol>
+              <li>Commonly known as window candles</li>
+              <li>Long, slender constructions add dimension to table tops</li>
+            </ol>
+          </td>
+        </tr>
       </tbody>
     </table>
     <!--Add the form here-->
-    
+    <h2>Enter your name and phone number to win a gift!</h2>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input id="name" type="text" aria-required="true">
+      <label for="number">Phone Number:</label>
+      <input id="number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" aria-required="true">
+      <button type="submit" value="Submit" action="#">Submit</button>
+    </form>
     
     <div class="whitespace"></div>
     <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
