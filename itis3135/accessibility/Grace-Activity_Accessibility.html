@@ -8,7 +8,7 @@
   <meta name="Description" content="Testing website for accessibility.">
 
   <!-- css -->
-  <link rel="stylesheet" href="styles/Grace-Activity_Accessibility.css">
+  <link rel="stylesheet" href="Grace-Activity_Accessibility.css">
   <title>Test For Accessibility</title>
 
 </head>
@@ -33,7 +33,7 @@
         <tr>
           <th>Birthday Candles</th>
           <td>
-            <img src="./images/accessibilityImages/Birthday-Candles.jpg" alt="cake with candles spelling out 'happy birthday'">
+            <img src="accessibilityImages/Birthday-Candles.jpg" alt="cake with candles spelling out 'happy birthday'">
           </td>
           <td>
             <ol>
@@ -46,7 +46,7 @@
         <tr>
             <th>Votives</th>
             <td>
-              <img src="./images/accessibilityImages/voltives.jpeg" alt="five votive candles on a white background">
+              <img src="accessibilityImages/voltives.jpeg" alt="five votive candles on a white background">
             </td>
             <td>
               <ol>
@@ -58,7 +58,7 @@
         <tr>
           <th>Taper Candles</th>
           <td>
-            <img src="./images/accessibilityImages/taper-candles.jpg" alt="assortment of different colored taper candles on a white background">
+            <img src="accessibilityImages/taper-candles.jpg" alt="assortment of different colored taper candles on a white background">
           </td>
           <td>
             <ol>
@@ -76,7 +76,7 @@
       <input id="name" type="text" aria-required="true">
       <label for="number">Phone Number:</label>
       <input id="number" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" aria-required="true">
-      <button type="submit" value="Submit" action="#">Submit</button>
+      <button type="submit" value="Submit">Submit</button>
     </form>
     
     <div class="whitespace"></div>
@@ -88,7 +88,12 @@
   </main>
 
   <footer>
-
+    <a href="https://validator.w3.org/check?uri=referer">
+      <img src="../images/button_validation_html5.png" alt="HTML5 validation button">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img src="../images/button_validation_css.png" alt="CSS validation button">
+    </a>
   </footer>
 </body>
 </html>
