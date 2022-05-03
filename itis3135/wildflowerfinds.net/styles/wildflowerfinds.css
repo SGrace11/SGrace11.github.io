@@ -58,3 +58,9 @@ a
 }
 a:hover{color: #cd413c}
 a:visited {color: #CE5E5A;}
+
+/*specific to item cards on items.html*/
+.item-grid
+{
+    display: grid;
+}
