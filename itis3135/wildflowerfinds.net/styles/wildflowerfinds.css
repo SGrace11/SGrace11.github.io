@@ -9,7 +9,7 @@ main
     margin: 15px;
 }
 
-header
+header, h2
 {
     text-align: center;
 }
@@ -24,15 +24,15 @@ nav
 
 nav a
 {
-    color: #F9D409;
+    color: #ed8c89;
     padding: 20px;
     display: block;
 }
-nav a:visited {color: #F9D409;}
+nav a:visited {color: #ed8c89;}
 nav a:hover, nav a:focus, nav ul .active
 {
     background-color: #484e3e;
-    color: #F9D409;
+    color: #ed8c89;
 }
 
 nav ul
@@ -53,14 +53,21 @@ footer
 
 a
 {
-    color: #CE5E5A;
+    color: #f9b509;
     text-decoration: none;
 }
-a:hover{color: #cd413c}
-a:visited {color: #CE5E5A;}
+a:hover{color: #f9b509}
+a:visited {color: #f9b509;}
 
 /*specific to item cards on items.html*/
 .item-grid
 {
     display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+img
+{
+    margin: 2px;
 }
