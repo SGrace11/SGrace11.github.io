@@ -115,12 +115,3 @@ a
 }
 a:hover{color: #66435d}
 a:visited {color: #4A2040;}
-
-.keys
-{
-    display: grid;
-}
-.calculator
-{
-    max-width: 500px;
-}
