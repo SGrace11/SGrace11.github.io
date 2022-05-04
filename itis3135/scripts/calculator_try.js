@@ -11,11 +11,6 @@ keys.addEventListener('click', e =>
         const displayedNum = display.textContent
         const previousKeyType = calculator.dataset.previousKeyType
 
-        if(action !== 'clear')
-        {
-            const clearButton = calculator.querySelector('[data-action=clear]')
-            clearButton.textContent = 'CE'
-        }
         if(!action)
         {
             console.log('number key')
@@ -77,6 +72,11 @@ keys.addEventListener('click', e =>
             }
             display.textContent = '0'
             calculator.dataset.previousKeyType = 'clear'
+        }
+        if(action !== 'clear')
+        {
+            const clearButton = calculator.querySelector('[data-action=clear]')
+            clearButton.textContent = 'CE'
         }
         if(action === 'calculate')
         {
