@@ -16,8 +16,8 @@ $(document).ready(function() {
                 var xmlDoc = $(this);
                 $("#team").append
                 ("<h3>" + xmlDoc.find("name").text() + "</h3>" +
-                          xmlDoc.find("title").text() + "<br>" +
-                          xmlDoc.find("bio").text() + "<br>");
+                        xmlDoc.find("title").text() + "<br>" +
+                        xmlDoc.find("bio").text() + "<br>");
             });
         }
     });
