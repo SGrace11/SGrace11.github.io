@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang = "en-US">
     <head>
-        <meta charset = "utf-8" />
+        <meta charset = "utf-8"/>
         <title>Sarah Grace | ITIS3135 | Sage Gecko | Image Swap</title>
         <link href="images/sg-favicon.png" type="image/x-icon" rel="icon">
         <link href="styles/image-swap.css" type="text/css" rel="stylesheet">
         <link href="styles/default.css" type="text/css" rel="stylesheet">
+        <script src="scripts/image-swap.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
@@ -13,48 +14,42 @@
             <h2>Baking Images</h2>
             <ul id="image-list">
                 <li>
-                    <img class="mini" src="images/thumbnails/cinnamonrolls-small.jpg" onclick="currentImage(1)" alt="Cinnamon Rolls">
+                    <a href="images/cinnamonrolls.jpg" title="Cinnamon Rolls">
+                        <img src="images/thumbnails/cinnamonrolls-small.jpg" alt="Cinnamon Rolls">
+                    </a>
                 </li>
                 <li>
-                    <img class="mini" src="images/thumbnails/coffeecakes-small.jpg" onclick="currentImage(2)" alt="Coffee Cake">
+                    <a href="images/coffeecakes.jpg" title="Coffee Cake">
+                        <img src="images/thumbnails/coffeecakes-small.jpg" alt="Coffee Cake">
+                    </a>
                 </li>
                 <li>
-                    <img class="mini" src="images/thumbnails/doughnuts-small.jpg" onclick="currentImage(3)" alt="Iced Doughnuts">
+                    <a href="images/doughnuts.jpg" title="Iced Doughnuts">
+                        <img src="images/thumbnails/doughnuts-small.jpg" alt="Iced Doughnuts">
+                    </a>
                 </li>
                 <li>
-                    <img class="mini" src="images/thumbnails/lemontart-small.jpg" onclick="currentImage(4)" alt="Lemon Tart">
+                    <a href="images/lemontart.jpg" title="Lemon Tart">
+                        <img src="images/thumbnails/lemontart-small.jpg" alt="Lemon Tart">
+                    </a>
                 </li>
                 <li>
-                    <img class="mini" src="images/thumbnails/pretzels-small.jpg" onclick="currentImage(5)" alt="Soft Pretzels">
+                    <a href="images/pretzels.jpg" title="Soft Pretzels">
+                        <img src="images/thumbnails/pretzels-small.jpg" alt="Soft Pretzels">
+                    </a>
                 </li>
                 <li>
-                    <img class="mini" src="images/thumbnails/savorybabka-small.jpg" onclick="currentImage(6)" alt="Savory Babka">
+                    <a href="images/savorybabka.jpg" title="Savory Babka">
+                        <img src="images/thumbnails/savorybabka-small.jpg" alt="Savory Babka">
+                    </a>
                 </li>
             </ul>
             <h2 id="caption">Cinnamon Rolls</h2>
-            <div class="main-image">
-                <div class="image">
-                    <img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls">
-                </div>
-                <div class="image">
-                    <img src="images/coffeecakes.jpg" alt="Coffee Cake">
-                </div>
-                <div class="image">
-                    <img src="images/doughnuts.jpg" alt="Iced Doughnuts">
-                </div>
-                <div class="image">
-                    <img src="images/lemontart.jpg" alt="Lemon Tart">
-                </div>
-                <div class="image">
-                    <img src="images/pretzels.jpg" alt="Soft Pretzels">
-                </div>
-                <div class="image">
-                    <img src="images/savorybabka.jpg" alt="Savory Babka">
-                </div>
-            </div>
+            <p>
+                <img id="image" src="images/cinnamonrolls.jpg" alt="">
+            </p>
         </main>
         <div data-include="components/footer.html"></div>
-        <script src="scripts/image-swap.js"></script>
         <script src="scripts/htmlinclude.js"></script>
     </body>
 </html>

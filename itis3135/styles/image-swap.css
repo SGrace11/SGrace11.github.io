@@ -17,11 +17,8 @@ main div
 {
     position: relative;
 }
-.image
-{
-    display: none;
-}
-div.main-image, div.image > *
+
+div.image > *
 {
     box-sizing: border-box;
 }

@@ -1,31 +1,22 @@
-let imageIndex = 1;
-showImage(imageIndex);
-
-currentImage(n)
+$(document).ready(function()
 {
-    showImage(imageIndex = n);
-}
-
-function showImage(n)
-{
-    let i;
-    let images = document.getElementsByClassName("image");
-    let thumbnails = document.getElementsByClassName("mini");
-    let captionText = document.getElementById("caption");
-
-    if(n > images.length)
+    $('#image-list a').click(function(evt)
     {
-        imageIndex = 1;
-    }
-    if(n < 1)
-    {
-        imageIndex = images.length;
-    }
+        evt.preventDefault();
 
-    for(i = 0; i < images.length; i++)
-    {
-        images[i].style.display = "none";
-    }
-    images[imageIndex - 1].style.display = "block";
-    captionText.innerHTML = thumbnails[imageIndex - 1].alt;
-}
+        let imagePath = $(this).attr('href');
+        let caption = $(this).attr('title');
+
+        $('#image').fadeOut(2000, function()
+        {
+            $('#image').attr('src', imagePath);
+            $('#image').fadeIn(2000);
+        });
+        $('#caption').fadeOut(2000, function()
+        {
+            $('#caption').text(caption);
+            $('#caption').fadeIn(2000);
+        });
+    });
+    $('li:first-child a').focus();
+});
