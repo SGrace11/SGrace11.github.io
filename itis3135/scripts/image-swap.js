@@ -4,8 +4,8 @@ $(document).ready(function()
     {
         evt.preventDefault();
 
-        let imagePath = $(this).attr('href');
-        let caption = $(this).attr('title');
+        var imagePath = $(this).attr('href');
+        var caption = $(this).attr('title');
 
         $('#image').fadeOut(2000, function()
         {
