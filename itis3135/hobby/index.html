@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset = "utf-8"/>
         <!--https://coolors.co/e3b505-95190c-759aab-1f2421-ffb7c3-->
         <style>
             body
@@ -63,8 +64,6 @@
             section
             {
                 display: none;
-                margin-left: 25px;
-                margin-right: 25px;
             }
             footer
             {
@@ -73,10 +72,6 @@
             footer img
             {
                 margin: 5px;
-            }
-            #tools figure
-            {
-                position: relative;
             }
             #about div
             {
@@ -97,8 +92,39 @@
                 height: auto;
                 opacity: 0.5;
             }
+            .container
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #tools img
+            {
+                max-width: 100%;
+            }
+            #tools figure
+            {
+                flex-basis: 40%;
+            }
+            .container div
+            {
+                padding-left: 15px;
+            }
+            table, th, td
+            {
+                border: 1px solid #1F2421;
+            }
+            table
+            {
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+            th, td
+            {
+                padding: 5px;
+            }
         </style>
-        <meta charset = "utf-8" />
         <title>Sarah Grace | ITIS3135 | Hobby Site</title>
     </head>
     <body>
@@ -108,6 +134,7 @@
                 <button class="tab" id="default" onclick="openTab(event, 'home')">Home</button>
                 <button class="tab" onclick="openTab(event, 'about')">About</button>
                 <button class="tab" onclick="openTab(event, 'tools')">Tools</button>
+                <button class="tab" onclick="openTab(event, 'media')">Media</button>
             </nav>
         </header>
         <main>
@@ -141,45 +168,85 @@
             </section>
             <section id="tools" class="content">
                 <h2>Basic Tools of the Trade</h2>
-                <figure>
-                    <img src="images/character_sheet.jpg" alt="page of a character sheet">
-                </figure>
-                <ul>
-                    <li>Set of Dice
+                <div class="container">
+                    <figure>
+                        <img src="images/character_sheet.jpg" alt="page of a character sheet">
+                    </figure>
+                    <div>
                         <ul>
-                            <li>Standard D&D utilizes a range of dice, from the basic six-sided die (d6) to the larger twenty-sided die (d20), and sometimes even the one hundred-sided die (d100)!</li>
-                            <li>Unique dice have quickly become a niche, and there are many sources online for dice made from different materials and of different sizes.</li>
-                            <li>In lieu of a set of dice, a random number generator can be used, but many players find dice more enjoyable and even start to assign sets to different characters.</li>
+                            <li>Set of Dice
+                                <ul>
+                                    <li>Standard D&D utilizes a range of dice, from the basic six-sided die (d6) to the larger twenty-sided die (d20), and sometimes even the one hundred-sided die (d100)!</li>
+                                    <li>Unique dice have quickly become a niche, and there are many sources online for dice made from different materials and of different sizes.</li>
+                                    <li>In lieu of a set of dice, a random number generator can be used, but many players find dice more enjoyable and even start to assign sets to different characters.</li>
+                                </ul>
+                            </li>
+                            <li>Player's Handbook
+                                <ul>
+                                    <li>This is the main reference for gameplay, as it has descriptions of the basic playable races and classes, as well as info on backgrounds, equipment, and spells for magic classes.</li>
+                                    <li>Digital copies are available online, and <a href="https://www.dndbeyond.com/sources#Sourcebooks">D&D Beyond</a> has it along with many other sourcebooks for reference, some for free, others for purchase.</li>
+                                </ul>
+                            </li>
+                            <li>Character Sheet
+                                <ul>
+                                    <li>There are a million and one styles of character sheets out there, but even just a piece of notebook paper will suffice, so long as it has your basic character info written on it.</li>
+                                    <li>Holds notes on character stats, background, inventory, available spells (if applicable), and any extra things you want on hand for gameplay.</li>
+                                </ul>
+                            </li>
+                            <li>Other Players
+                                <ul>
+                                    <li>Though there have been roleplaying games developed for single players, it is much more fun to play D&D with a group!</li>
+                                    <li>The best places to start looking for a group to join - if you don't already have one - are local community spaces or game stores and clubs at your school/university.</li>
+                                </ul>
+                            </li>
+                            <li>Imagination
+                                <ul>
+                                    <li>Ultimately with roleplaying games like D&D, you get out what you put in, so the more creative you get, the better your experience is bound to be!</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li>Player's Handbook
-                        <ul>
-                            <li>This is the main reference for gameplay, as it has descriptions of the basic playable races and classes, as well as info on backgrounds, equipment, and spells for magic classes.</li>
-                            <li>Digital copies are available online, and <a href="https://www.dndbeyond.com/sources#Sourcebooks">D&D Beyond</a> has it along with many other sourcebooks for reference, some for free, others for purchase.</li>
-                        </ul>
-                    </li>
-                    <li>Character Sheet
-                        <ul>
-                            <li>There are a million and one styles of character sheets out there, but even just a piece of notebook paper will suffice, so long as it has your basic character info written on it.</li>
-                            <li>Holds notes on character stats, background, inventory, available spells (if applicable), and any extra things you want on hand for gameplay.</li>
-                        </ul>
-                    </li>
-                    <li>Other Players
-                        <ul>
-                            <li>Though there have been roleplaying games developed for single players, it is much more fun to play D&D with a group!</li>
-                            <li>The best places to start looking for a group to join - if you don't already have one - are local community spaces or game stores and clubs at your school/university.</li>
-                        </ul>
-                    </li>
-                    <li>Imagination
-                        <ul>
-                            <li>Ultimately with roleplaying games like D&D, you get out what you put in, so the more creative you get, the better your experience is bound to be!</li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </section>
-            <section id="when"></section>
-            <section id="where"></section>
-            <section id="why"></section>
+            <section id="media">
+                <h2>Rather Learn by Observation?</h2>
+                <p>
+                    There are many ways to learn how to play dungeons and dragons, one of which is watching others play. Luckily enough, there are plenty of groups that share
+                    their games with the internet. Here are just a few to get you started!
+                </p>
+                <table>
+                    <tr>
+                        <th>Group</th>
+                        <th>Format</th>
+                    </tr>
+                    <tr>
+                        <td>Critical Role</td>
+                        <td>
+                            <ul>
+                                <li>Twitch</li>
+                                <li>Podcast</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dimension 20</td>
+                        <td>
+                            <ul>
+                                <li>Dropout.tv</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The Adventure Zone</td>
+                        <td>
+                            <ul>
+                                <li>Podcast</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>An honorable mention goes to the new Amazon series "The Legend of Vox Machina", based on Critical Role's first campaign. It is a great portrayal of the story that gets created around a D&D table!</p>
+            </section>
             <script src="scripts/default.js"></script>
         </main>
         <footer>
