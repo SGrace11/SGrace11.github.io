@@ -8,20 +8,63 @@
                 background-color: #759AAB;
                 font-family: Century sans-serif, Cambria sans-serif;
                 color: #1F2421;
+                font-size: large;
             }
             main {margin: 15px;}
             header {text-align: center;}
-            h1 h2 {font-family: Century serif, Cambria serif;}
+            h1, h2
+            {
+                text-align: center;
+                font-family: Century serif, Cambria serif;
+            }
             figure img
             {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
             }
+            p
+            {
+                max-width: 770px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul
+            {
+                max-width: 950px;
+                margin-left: auto;
+                margin-right: auto;
+            }
             a
             {
-                color: #E3B505;
+                color: #1F2421;
                 text-decoration: none;
+            }
+            nav
+            {
+                overflow: hidden;
+                background-color: #FFB7C3;
+                border: 1px solid #1F2421;
+            }
+            nav button
+            {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+            nav button:hover, nav button.active
+            {
+                background-color: #fa899c;
+            }
+            section
+            {
+                display: none;
+                margin-left: 25px;
+                margin-right: 25px;
             }
             footer
             {
@@ -31,6 +74,29 @@
             {
                 margin: 5px;
             }
+            #tools figure
+            {
+                position: relative;
+            }
+            #about div
+            {
+                position: absolute;
+                top: 30%;
+                width: 100%;
+            }
+            #about p
+            {
+                background-color: #759aabae;
+            }
+            #about img
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                height: auto;
+                opacity: 0.5;
+            }
         </style>
         <meta charset = "utf-8" />
         <title>Sarah Grace | ITIS3135 | Hobby Site</title>
@@ -39,24 +105,82 @@
         <header>
             <h1>Sarah Grace | Hobby Site</h1>
             <nav>
-                <a>Home</a>
+                <button class="tab" id="default" onclick="openTab(event, 'home')">Home</button>
+                <button class="tab" onclick="openTab(event, 'about')">About</button>
+                <button class="tab" onclick="openTab(event, 'tools')">Tools</button>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="home" class="content">
                 <h2>Crash Course to D&D</h2>
-                <figure id="what">
-                    <img src="../images/d&d_dice_and_manuals.jpg" alt="A small dice bag, six assorted dice, and three paper Dungeons and Dragons TSR manuals">
+                <figure>
+                    <img src="images/d&d_dice_and_manuals.jpg" alt="A small dice bag, six assorted dice, and three paper Dungeons and Dragons TSR manuals">
                 </figure>
                 <p>
-                    What is D&D?
+                    What is D&D? Is it difficult to get into? Where should I start learning?
+                    If these questions sound familiar, you are in the right place.
+                    Welcome to Sarah's Crash Course in Dungeons & Dragons, where I'll answer all those questions, and more!
                 </p>
             </section>
-            <section id="who"></section>
+            <section id="about" class="content">
+                <img src="images/dice.jpg" alt="two sets of dice on an off-white background, set to low opacity">
+                <div>
+                    <h2>What Is Dungeons and Dragons?</h2>
+                    <p>
+                        Dungeons and dragons is a popular table-top roleplaying game based in a fantasy world, originally created by Gary Gygax and Dave Arneston.
+                        The current edition is 5e, and most modern sourcebooks are published by Wizards of the Coast. Games are typically lead by one player,
+                        known as the dungeon or game master (DM or GM), who leads the other players through the world that's been created. The other players create a character
+                        to act as in the world.
+                    </p>
+                    <p>
+                        D&D is a fun game to play with friends that encourages creative thinking and teamwork. Players get the chance to explore a world vastly different
+                        from our own, affecting the course the story takes with each decision and task. The characters and the DM work together to weave a story that is
+                        ever changing. Each party's game is unique, even if they are based on the same sourcebook or location.
+                    </p>
+                </div>
+            </section>
+            <section id="tools" class="content">
+                <h2>Basic Tools of the Trade</h2>
+                <figure>
+                    <img src="images/character_sheet.jpg" alt="page of a character sheet">
+                </figure>
+                <ul>
+                    <li>Set of Dice
+                        <ul>
+                            <li>Standard D&D utilizes a range of dice, from the basic six-sided die (d6) to the larger twenty-sided die (d20), and sometimes even the one hundred-sided die (d100)!</li>
+                            <li>Unique dice have quickly become a niche, and there are many sources online for dice made from different materials and of different sizes.</li>
+                            <li>In lieu of a set of dice, a random number generator can be used, but many players find dice more enjoyable and even start to assign sets to different characters.</li>
+                        </ul>
+                    </li>
+                    <li>Player's Handbook
+                        <ul>
+                            <li>This is the main reference for gameplay, as it has descriptions of the basic playable races and classes, as well as info on backgrounds, equipment, and spells for magic classes.</li>
+                            <li>Digital copies are available online, and <a href="https://www.dndbeyond.com/sources#Sourcebooks">D&D Beyond</a> has it along with many other sourcebooks for reference, some for free, others for purchase.</li>
+                        </ul>
+                    </li>
+                    <li>Character Sheet
+                        <ul>
+                            <li>There are a million and one styles of character sheets out there, but even just a piece of notebook paper will suffice, so long as it has your basic character info written on it.</li>
+                            <li>Holds notes on character stats, background, inventory, available spells (if applicable), and any extra things you want on hand for gameplay.</li>
+                        </ul>
+                    </li>
+                    <li>Other Players
+                        <ul>
+                            <li>Though there have been roleplaying games developed for single players, it is much more fun to play D&D with a group!</li>
+                            <li>The best places to start looking for a group to join - if you don't already have one - are local community spaces or game stores and clubs at your school/university.</li>
+                        </ul>
+                    </li>
+                    <li>Imagination
+                        <ul>
+                            <li>Ultimately with roleplaying games like D&D, you get out what you put in, so the more creative you get, the better your experience is bound to be!</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
             <section id="when"></section>
             <section id="where"></section>
             <section id="why"></section>
-            <section id="how"></section>
+            <script src="scripts/default.js"></script>
         </main>
         <footer>
             Created by <a href="../gracetechdesigns.com/">Grace Tech Designs</a> &copy;2022.<br>
