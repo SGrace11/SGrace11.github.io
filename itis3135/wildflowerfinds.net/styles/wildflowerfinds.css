@@ -71,3 +71,10 @@ img
 {
     margin: 2px;
 }
+
+/*specific to accordion widget on news/html*/
+.ui-accordion-header-active
+{
+    background-color: #ed8c89;
+    color: black;
+}
