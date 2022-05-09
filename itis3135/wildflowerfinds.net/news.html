@@ -2,25 +2,34 @@
 <html lang="en">
     <head>
         <meta charset = "utf-8" />
-            <title>Wildflower Finds 🌼 News</title>
-            <link href = "styles/wildflowerfinds.css" type = "text/css" rel = "stylesheet">
+        <title>Wildflower Finds 🌼 News</title>
+        <link href = "styles/wildflowerfinds.css" type = "text/css" rel = "stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="scripts/newsAccordion.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
             <h2>Here's what to look forward to!</h2>
-            <div>
-                <h3>April 25, 2022</h3>
-                <p>
-                    We are closing out April and bring in May with this two part drop series! Enjoy these cool colors to help you beat the coming heat.
-                    Drop Date: Friday, 4/29
-                </p>
-
-                <h3>March 22, 2022</h3>
-                <p>
-                    We are so excited to show you our first spring drop full of a variety of sizes and colors!
-                    Drop Date: Friday, 3/25
-                </p>
+            <div id="accordion">
+                <h3>New Drop!</h3>
+                <div>
+                    <p>April 25, 2022</p>
+                    <p>
+                        We are closing out April and bring in May with this two part drop series! Enjoy these cool colors to help you beat the coming heat.
+                        Drop Date: Friday, 4/29
+                    </p>
+                </div>
+                <h3>April Showers Drop</h3>
+                <div>
+                    <p>March 22, 2022</p>
+                    <p>
+                        We are so excited to show you our first spring drop full of a variety of sizes and colors!
+                        Drop Date: Friday, 3/25
+                    </p>
+                </div>
             </div>
         </main>
         <div data-include="components/footer.html"></div>
