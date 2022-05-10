@@ -3,18 +3,24 @@
     <head>
         <meta charset = "utf-8" />
             <title>Wildflower Finds 🌼 Form</title>
-            <link href = "styles/wildflowerfinds.css" type = "text/css" rel = "stylesheet">
+            <link href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" rel="stylesheet">
+            <link href="styles/wildflowerfinds.css" type="text/css" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+            <script src="scripts/formDatePicker.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
             <h2>Interested in Our Personalized Box?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias debitis dolorem assumenda sequi ratione cumque rerum dicta ab incidunt ut, esse temporibus! Itaque accusamus, error suscipit voluptas delectus ducimus magnam ut a iusto consequuntur ipsum quo architecto, soluta necessitatibus nesciunt aliquam qui rerum deleniti dolor illum corrupti! Excepturi, quod voluptatem!</p>
+            <p>Sign up here for a consult for a personalized box of thrifted finds!</p>
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required><br>
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="date" required>
             </form>
         </main>
         <div data-include="components/footer.html"></div>
