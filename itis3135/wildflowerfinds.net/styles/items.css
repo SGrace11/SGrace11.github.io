@@ -1,0 +1,7 @@
+.item-grid
+{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

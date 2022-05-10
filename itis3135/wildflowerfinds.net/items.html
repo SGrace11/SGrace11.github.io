@@ -2,20 +2,67 @@
 <html lang="en">
     <head>
         <meta charset = "utf-8" />
-            <title>Wildflower Finds 🌼 Shop</title>
-            <link href = "styles/wildflowerfinds.css" type = "text/css" rel = "stylesheet">
+        <title>Wildflower Finds 🌼 Shop</title>
+        <link href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" rel="stylesheet">
+        <link href="styles/wildflowerfinds.css" type="text/css" rel="stylesheet">
+        <link href="styles/items.css" type="text/css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="scripts/itemsAccordion.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
             <h2>Look through our finds</h2>
-            <div class="item-grid">
+            <div id="item-grid" class="item-grid">
                 <img src="images/greenPants.JPG" alt="green denim ankle-length pants">
+                <div>
+                    <p>
+                        Green Pants<br>
+                        Brand: Lee<br>
+                        Size: 29
+                    </p>
+                </div>
                 <img src="images/greenStripedShirt.JPG" alt="green striped light, short-sleeved button up shirt">
+                <div>
+                    <p>
+                        Striped Shirt<br>
+                        Brand: Croft & Barrow<br>
+                        Size: M
+                    </p>
+                </div>
                 <img src="images/jeanShorts.JPG" alt="dark wash denim shorts">
+                <div>
+                    <p>
+                        Denim Shorts<br>
+                        Brand: Lee<br>
+                        Size: 30
+                    </p>
+                </div>
                 <img src="images/navyDress.JPG" alt="mid-calf length navy dress">
+                <div>
+                    <p>
+                        Navy Dress<br>
+                        Brand: Altard State<br>
+                        Size: M
+                    </p>
+                </div>
                 <img src="images/stripedButtonUp.JPG" alt="linen short-sleeved green, blue, and white striped shirt">
+                <div>
+                    <p>
+                        Linen Shirt<br>
+                        Brand: Unknown<br>
+                        Size: M
+                    </p>
+                </div>
                 <img src="images/stripedLinenPants.JPG" alt="gray, tan, and white ankle-length linen pants">
+                <div>
+                    <p>
+                        Striped Pants<br>
+                        Brand: Anthropologie<br>
+                        Size: M
+                    </p>
+                </div>
             </div>
         </main>
         <div data-include="components/footer.html"></div>

@@ -59,19 +59,6 @@ a
 a:hover{color: #f9b509}
 a:visited {color: #f9b509;}
 
-/*specific to item cards on items.html*/
-.item-grid
-{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-}
-
-img
-{
-    margin: 2px;
-}
-
 /*specific to accordion widget on news/html*/
 .ui-accordion-header-active
 {
