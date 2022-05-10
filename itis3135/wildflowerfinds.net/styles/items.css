@@ -1,7 +1,10 @@
 .item-grid
 {
-    padding: 5px;
-    margin: 10px;
+    width: 1300px;
     display: flex;
     flex-wrap: wrap;
+}
+img
+{
+    margin: 10px;
 }
