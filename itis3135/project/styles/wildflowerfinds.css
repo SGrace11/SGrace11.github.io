@@ -81,3 +81,20 @@ input
 {
     margin: 3px;
 }
+
+/*logo on index.html*/
+.logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    font-size: larger;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
