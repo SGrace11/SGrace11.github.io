@@ -1,0 +1,16 @@
+header {
+    color: #2D3047;
+    background-color: #de7aca;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+a {
+    color: #92140C;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #2D3047;
+    background-color: #2D3047;
+}
