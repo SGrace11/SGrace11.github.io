@@ -5,6 +5,24 @@ header {
     padding: 5px;
 }
 
+.userNav {
+    display: flex;
+    flex-direction: row;
+}
+
+header a {
+    margin: 5px;
+}
+
+footer {
+    color: #2D3047;
+    background-color: #de7aca;
+}
+
+main{
+    min-height: 400px;
+}
+
 a {
     color: #92140C;
     text-decoration: none;
