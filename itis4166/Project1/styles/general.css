@@ -24,6 +24,19 @@ header a {
 footer {
     color: #2D3047;
     background-color: #de7aca;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer a {
+    margin: 5px;
+}
+
+footer i {
+    margin: 5px;
 }
 
 main{
