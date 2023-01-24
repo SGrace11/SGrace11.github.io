@@ -11,7 +11,7 @@ header div {
     align-items: center;
 }
 
-#userNav {
+.userNav {
     height: 87px;
     display: flex;
     align-items: center;
