@@ -5,9 +5,16 @@ header {
     padding: 5px;
 }
 
-.userNav {
+header div {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userNav {
+    height: 87px;
+    display: flex;
+    align-items: center;
 }
 
 header a {
