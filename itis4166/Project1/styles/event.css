@@ -1,0 +1,14 @@
+img {
+    height: auto;
+    width: 250px;
+}
+
+p {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+p div {
+    
+}
