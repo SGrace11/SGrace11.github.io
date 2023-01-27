@@ -52,3 +52,35 @@ hr {
     border: 1px solid #2D3047;
     background-color: #2D3047;
 }
+
+form {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+}
+
+select {
+    margin: 2px;
+    width: 100%;
+}
+
+input {
+    margin: 2px;
+    width: 100%;
+}
+
+textarea {
+    margin: 2px;
+    width: 100%;
+}
+
+label {
+    margin: 2px;
+}
+
+input[type=submit] {
+    background-color: #92140C;
+    color: white;
+    border: none;
+    margin: 2px;
+}

@@ -25,24 +25,24 @@
             <form action="#">
                 <label for="category">Category:</label>
                 <select id="category" name="category" required>
+                    <option value="" disabled selected>- Select One -</option>
                     <option value="board">Board Game</option>
                     <option value="tabletop">Table Top Game</option>
                     <option value="card">Card Game</option>
-                    <option value="video">Video Game</option>
                     <option value="other">Other</option>
-                </select>
+                </select><br>
                 <label for="title">Title:</label>
-                <input id="title" name="title" type="text" required>
+                <input id="title" name="title" type="text" required><br>
                 <label for="details">Details:</label>
-                <textarea id="details" name="details" rows="5" required>
+                <textarea id="details" name="details" rows="5" required></textarea><br>
                 <label>Start:</label>
-                <input id="start" name="start" type="datetime" required>
+                <input id="start" name="start" type="datetime-local" required><br>
                 <label>End:</label>
-                <input id="end" name="end" type="datetime" required>
+                <input id="end" name="end" type="datetime-local" required><br>
                 <label>Location:</label>
-                <input id="location" name="location" type="text" required>
+                <input id="location" name="location" type="text" required><br>
                 <label>Image:</label>
-                <input id="image" name="image" type="file" required>
+                <input id="image" name="image" type="file" required><br>
                 <input id="submit" name="submit" type="submit" value="Submit">
             </form>
         </main>
