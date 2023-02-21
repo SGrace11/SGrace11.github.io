@@ -1,10 +1,12 @@
 <%- include('../partials/header.ejs') %>
         <main>
+            <% if(events.length) { %>
             <h2>Board Games</h2>
             <ul>
-                <li><a href="event.html">Catan Tournament</a></li>
-                <li><a href="event.html">Chaos Monopoly Night</a></li>
-                <li><a href="event.html">BYO Board Game</a></li>
+                <% events.forEach(event=>{
+                    if(event.category === 'Board Game') { %>
+                <li><a href="/events/<%= event.id %>"><%= event.title %></a></li>
+                <% }); %>
             </ul>
             <h2>Table Top Games</h2>
             <ul>
@@ -18,5 +20,8 @@
                 <li><a href="event.html">Pokemon Trade Night</a></li>
                 <li><a href="event.html">Indie Card Game Night</a></li>
             </ul>
+            <% } else { %>
+                <p>There are no events to display</p>
+            <% } %>
         </main>
 <%- include('../partials/footer.ejs') %>
