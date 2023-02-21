@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const multer = require('multer');
+const eventRoutes = require('routes/eventRoutes');
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use(methodOverride('_method'));
 app.get('/', (req, res)=> {
     res.render('index')
 });
+
+app.use('/events', eventRoutes);
 
 app.use((req, res, next)=> {
     let err = new Error('The server cannot locate ' + req.url);
