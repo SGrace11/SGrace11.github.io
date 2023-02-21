@@ -1,14 +1,13 @@
 <%- include('../partials/header.ejs') %>
         <main>
-            <h2>Catan Tournament</h2>
+            <h2><%= event.title %></h2>
             <div>
-                <img src="images/catan.jpg" alt="close up image of a Settlers of Catan game board">
+                <img src="<%= event.image %>" alt="close up image of a Settlers of Catan game board">
                 <div>
-                    <b>Host:</b> Jenny Stevenson<br>
+                    <b>Host:</b> <%= event.host %><br>
                     <b>Date and Time:</b> Friday, February 3, 2023, 4:00pm - 7:00pm<br>
-                    <b>Location:</b> Tourney Room<br>
-                    <b>Details:</b> Do you have what it takes to be the Catan Champion? Come find out! Bracket style tournament 
-                    with prizes for first, second, and third place. Registration required to compete.
+                    <b>Location:</b> <%= event.location %><br>
+                    <b>Details:</b> <%= event.details %>
                 </div>
             </div>
         </main>
